@@ -1,0 +1,106 @@
+title: Start
+---
+
+<<declare $anger = 0>>
+<<declare $apathy = 0>>
+
+
+Henry pulls up into the driveway. 
+Driveway leads to a sad little house. 
+Henry exits the car and closes the door. 
+The door pops back open. 
+
+-> Slam it closed. 
+    The door latches, but the window breaks. 
+    Henry cusses, kicks the car, and heads toward the front door.
+    <<set $anger = $anger +1>>
+-> Try again. 
+    The door pops back open. 
+    -> Slam it closed. 
+        The door latches, but the window breaks. 
+        Henry cusses, kicks the car, and heads toward the front door.
+        <<set $anger = $anger +1>>
+    -> Leave it. 
+        The door swings open and Henry walks away from it. 
+        <<set $apathy = $apathy +1>>
+    -> One more time. 
+        The door latches. 
+        Henry shuffles to the front door. 
+        <<set $anger = $anger -1>>
+-> Leave it. 
+    The door swings open and Henry walks away from it. 
+    He shuffles to the front door. 
+    <<set $apathy = $apathy +1>>
+
+There is a note on the door. 
+Elle: I'm staying with my sister. Please don't try to reach me. 
+Henry opens the door. 
+He collects the pile of mail at the foot of the door. 
+Henry stumbles into the kitchen and sits at the table, sorting through the mail. Empty alcohol bottles on the table. 
+Bills, bills, bills. 
+A brick SMASHES through the window. 
+Henry jumps to the window, but only sees a car speeding away. 
+Wrapped around the brick is a newspaper. 
+It reads - CAN WE TRUST OUR COPS?
+Out of anger, Henry throws the brick at the table, knocking empty bottles about and the mail. 
+Gleaming on top like a sheet of gold is a pamphlet. 
+The pamphlet advertises the Roarting Twenties Resort. 
+Glamorous pictures and enticing pages. 
+On the back it reads - HIRING, SECURITY.
+Henry pulls out his phone and dials the number. 
+Operator: Thank you for calling Roaring Twenties Resort! 
+Operator: For tickets, press one. 
+Operator: For availability, press two.
+Operator: For hiring, press three. 
+    -> Press One
+        Operator: Ticket costs start at $6000 for our full week stay. Meals, board, and costumes included. 
+    -> Press Two
+        Operator: We offer an exclusive seven night stay which you extend your stay at any time. Trains run only on Fridays. 
+    -> Press Three 
+        Opeartor: Please hold. 
+        <<jump Resort_Bound>>
+===
+
+title: Resort_Bound
+---
+
+Henry adjusts his tie in the window and assesses his suit. 
+It fits a little tight, but he needs this job and it's all he had. 
+The vacationers going to the resort are dressed to the nines. 
+Expensive jewelry glitters on the the ladies and the men swirl liquor in crystal glasses.
+Henry finds a corner away from the chatting crowds. 
+Ticketmaster: "Ticket please."
+Henry pats down his jacket and pulls out a crumpled ticket. 
+Henry: "Here." 
+The Ticketmaster takes the ticket and stamps Henry's hand. 
+Ticketmaster: "There you go! Enjoy your stay!" 
+    -> Check out the poker table. 
+        <<jump Poker_Table>>
+    -> Chat with the vacationers.
+        <<jump Stolen_Earring>>
+    -> Get a drink at the bar. 
+        <<jump Open_Bar>>
+    -> Walk the length of the train. 
+        <<jump Caboose>>
+===
+
+title: Poker_Table
+---
+Card Game
+===
+
+title: Stolen_Earring
+---
+Accusation
+===
+
+title: Open_Bar
+---
+Drinky Drinky
+===
+
+title: Caboose
+---
+Sightseeing
+===
+
